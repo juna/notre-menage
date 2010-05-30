@@ -1,0 +1,402 @@
+/*
+ * General stuff
+ */
+body
+{
+	font-family: Arial;
+	background-color: #eee;
+}
+
+
+
+/*
+ * Links
+ */
+a:link, a:visited
+{
+	
+}
+a:hover, a:active
+{
+	
+}
+
+
+
+/*
+ * The layout
+ */
+div#header
+{
+}
+
+	div#header h1.title
+	{
+		font-family: georgia;
+		padding: 10px 10px 0 10px;
+		font-size: 1.4em;
+		float: right;
+	}
+	
+		div#header h1.title a:link, div#header h1.title a:visited
+		{
+			color: darkblue;
+			text-decoration: none;
+		}
+		div#header h1.title a:hover, div#header h1.title a:active
+		{
+			color: blue;
+		}
+
+div#navigation
+{
+	border-bottom: 1px solid #ddd;
+}
+
+	div#navigation ul
+	{
+		margin: 0;
+		padding: 12px 0 0 0;
+		
+		list-style: none;
+	}
+	
+		div#navigation ul li
+		{
+			float: left;
+			text-align: center;
+			margin: 0 5px 0 0;
+		}
+		
+			div#navigation ul li a:link, div#navigation ul li a:visited,
+			div#navigation ul li.active a:link, div#navigation ul li.active a:visited
+			{
+				display: block;
+				text-decoration: none;
+				font-size: .8em;
+				padding: 5px 5px 4px 5px;
+				background-color: #666;
+				color: #eee;
+			}
+			div#navigation ul li a:hover, div#navigation ul li a:active,
+			div#navigation ul li.active a:hover, div#navigation ul li.active a:active
+			{
+				background-color: #333;
+				color: white;
+			}
+
+		div#navigation ul li.active
+		{
+			float: left;
+			width: 290px;
+			text-align: center;
+		}
+
+			div#navigation ul li.active a:link, div#navigation ul li.active a:visited
+			{
+				background-color: #000;
+				color: white;
+				font-size: 1.5em;
+			}
+			div#navigation ul li.active a:hover, div#navigation ul li.active a:active
+			{
+				
+			}
+
+div#content
+{
+	background-color: white;
+	padding: 10px 0 10px 0;
+}
+
+	div#contentinner
+	{
+		float: left;
+		width: 300px;
+	}
+	
+	div#sidebar
+	{
+	}
+	
+		div#sidebar h3
+		{
+			font-size: 1.3em;
+			border-bottom: 1px solid #333;
+			margin: 0 0 5px 0;
+		}
+	
+		div#sidebar div.divider
+		{
+			background-color: #eee;
+			height: 2px;
+			margin: 25px 0 25px 0;
+		}
+
+div#footer
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+	color: #666;
+	
+	font-family: Verdana;
+	font-size: .75em;
+}
+
+div.gmargin
+{
+	margin: 0 40px 0 40px;
+}
+
+div.innerpadding
+{
+	margin: 5px 10px 5px 10px;
+}
+
+
+
+/*
+ * Articles
+ */
+div#contentinner div.articles_list
+{
+	
+}
+
+	div#contentinner div.articles_list div.article
+	{
+		margin: 35px 0 35px 0;
+	}
+	
+		div#contentinner div.articles_list div.article h2
+		{
+			
+		}
+		
+		div#contentinner div.articles_list div.article p.intro
+		{
+			
+		}
+		
+		div#contentinner div.articles_list div.article a.readon:link,
+		div#contentinner div.articles_list div.article a.readon:visited
+		{
+			
+		}
+		div#contentinner div.articles_list div.article a.readon:hover,
+		div#contentinner div.articles_list div.article a.readon:active
+		{
+			
+		}
+		
+		div#contentinner div.articles_list div.article p.subinfo
+		{
+			margin: 15px 0 0 0;
+			font-size: .8em;
+			color: #888;
+		}
+
+/*
+ * Forms
+ */
+div.formlabel
+{
+	text-align: right;
+	font-size: 1.1em;
+	margin-bottom: 10px;
+}
+
+div.formfield
+{
+	margin-bottom: 10px;
+}
+	
+	div.formfield input
+	{
+		margin: 0;
+		padding: 5px;
+		font-size: 1.3em;
+	}
+	
+	div.formfield textarea
+	{
+		font-family: Verdana;
+		margin: 0;
+		padding: 5px;
+		font-size: 1em;
+		width: 418px;
+	}
+
+div.formerror
+{
+	font-size: .8em;
+	color: red;
+}
+
+
+
+/*
+ * Other stuff
+ */
+table#buying_edit
+{
+	
+}
+
+	table#buying_edit td
+	{
+		vertical-align: top;
+	}
+ 
+ul#buying_edit_list
+{
+	padding: 0;
+	margin: 10px 0 0 10px;
+	list-style: none;
+}
+
+	ul#buying_edit_list li
+	{
+		padding: 0 2px 0 2px;
+		font-size: 1.4em;
+		border-bottom: 1px solid #eee;
+	}
+	
+	ul#buying_edit_list li.active
+	{
+		background-color: green;
+		-moz-border-radius: 3px;
+		color: white;
+	}
+	
+	ul#buying_edit_list li.edited
+	{
+		background-color: #eee;
+		-moz-border-radius: 3px;
+	}
+	
+		ul#buying_edit_list li a.productdelete:link,
+		ul#buying_edit_list li a.productdelete:visited
+		{
+			outline: 0;
+			text-decoration: none;
+			color: darkred;
+			padding: 2px;
+		}
+		
+		ul#buying_edit_list li a.productdelete:hover
+		{
+			background-color: darkred;
+			color: white;
+		}
+		
+		ul#buying_edit_list li a.productdelete:active
+		{
+		
+		}
+	
+		ul#buying_edit_list li div.price
+		{
+			float: right;
+		}
+		
+			ul#buying_edit_list li div.price input
+			{
+				width: 70px;
+				font-size: 1.2em;
+				border: 0;
+				border-bottom: 2px solid white;
+				text-align: right;
+				padding: 0;
+				margin: 0;
+				background-color: transparent;
+			}
+			
+				ul#buying_edit_list li div.price input:focus
+				{
+					border-bottom: 2px solid green;
+				}
+				
+			ul#buying_edit_list li.active div.price input
+			{
+				color: white;
+			}
+
+div#buyings_edit_list_products_outer
+{
+	height: 650px;
+	overflow: -moz-scrollbars-vertical;
+}
+
+table#buyings_edit_list_products
+{
+
+}
+
+	table#buyings_edit_list_products tr
+	{
+		
+	}
+	
+		table#buyings_edit_list_products tr td
+		{
+
+		}
+
+	table#buyings_edit_list_products a:link,
+	table#buyings_edit_list_products a:visited
+	{
+		outline: 0;
+		padding: 1px;
+		text-decoration: none;
+		font-size: 1.7em;
+		line-height: 1.1em;
+	}
+	
+	table#buyings_edit_list_products a:hover
+	{
+		background-color: #333;
+		color: #fff;
+		-moz-border-radius: 3px;
+	}
+	
+	table#buyings_edit_list_products a:active
+	{
+		background-color: red;
+	}
+
+	table#buyings_edit_list_products div.divider
+	{
+		margin: 15px 0 5px 0;
+		border-top: 1px solid #ddd;
+	}
+	
+div.ac_results
+{
+	
+}
+
+	div.ac_results ul
+	{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: 1.3em;
+		border: 1px solid #888;
+		border-top: 0;
+		width: 290px;
+		background-color: white;
+	}
+	
+		div.ac_results ul li
+		{
+			padding: 5px;
+			width: 260px;
+		}
+		
+			div.ac_results ul li.ac_over
+			{
+				background-color: darkgreen;
+				color: white;
+			}

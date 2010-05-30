@@ -1,0 +1,269 @@
+/*
+ * General stuff
+ */
+body
+{
+	font-family: Arial;
+	background-color: #eee;
+}
+
+
+
+/*
+ * Links
+ */
+a:link, a:visited
+{
+	
+}
+a:hover, a:active
+{
+	
+}
+
+
+
+/*
+ * The layout
+ */
+div#header
+{
+}
+
+	div#header h1.title
+	{
+		font-family: georgia;
+		padding: 10px 0 0 10px;
+		font-size: 2.1em;
+	}
+	
+		div#header h1.title a:link, div#header h1.title a:visited
+		{
+			color: darkblue;
+			text-decoration: none;
+		}
+		div#header h1.title a:hover, div#header h1.title a:active
+		{
+			color: blue;
+		}
+
+div#navigation
+{
+	background-color: white;
+	height: 40px;
+}
+
+	div#navigation ul
+	{
+		margin: 0;
+		padding: 0;
+		
+		list-style: none;
+	}
+	
+		div#navigation ul li
+		{
+			float: left;
+			width: 290px;
+			text-align: center;
+		}
+		
+			div#navigation ul li a:link, div#navigation ul li a:visited,
+			div#navigation ul li.active a:link, div#navigation ul li.active a:visited
+			{
+				-moz-border-radius: 4px 4px 0 0;
+				display: block;
+				text-decoration: none;
+				font-size: 1.2em;
+				height: 40px;
+				line-height: 40px;
+				background-color: #666;
+				color: #eee;
+			}
+			div#navigation ul li a:hover, div#navigation ul li a:active,
+			div#navigation ul li.active a:hover, div#navigation ul li.active a:active
+			{
+				background-color: #333;
+				color: white;
+			}
+
+		div#navigation ul li.active
+		{
+			float: left;
+			width: 290px;
+			text-align: center;
+		}
+
+			div#navigation ul li.active a:link, div#navigation ul li.active a:visited
+			{
+				background-color: #000;
+				color: white;
+				font-size: 1.5em;
+			}
+			div#navigation ul li.active a:hover, div#navigation ul li.active a:active
+			{
+				
+			}
+
+div#highlight
+{
+	background-color: #333;
+	color: white;
+}
+
+div#contentintro
+{
+	background-color: white;
+}
+
+div#content
+{
+	background-color: white;
+	padding: 10px 0 10px 0;
+}
+
+	div#contentinner
+	{
+		
+	}
+	
+	div#sidebar
+	{
+		
+	}
+	
+		div#sidebar h3
+		{
+			font-size: 1.3em;
+			border-bottom: 1px solid #333;
+			margin: 0 0 5px 0;
+		}
+	
+		div#sidebar div.divider
+		{
+			background-color: #eee;
+			height: 2px;
+			margin: 25px 0 25px 0;
+		}
+
+div#footer
+{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+	color: #666;
+	
+	font-family: Verdana;
+	font-size: .75em;
+}
+
+div.gmargin
+{
+	margin: 0 40px 0 40px;
+}
+
+div.innerpadding
+{
+	margin: 5px 10px 5px 10px;
+}
+
+
+
+/*
+ * Articles
+ */
+div#contentinner div.articles_list
+{
+	
+}
+
+	div#contentinner div.articles_list div.article
+	{
+		margin: 35px 0 35px 0;
+	}
+	
+		div#contentinner div.articles_list div.article h2
+		{
+			
+		}
+		
+		div#contentinner div.articles_list div.article p.intro
+		{
+			
+		}
+		
+		div#contentinner div.articles_list div.article a.readon:link,
+		div#contentinner div.articles_list div.article a.readon:visited
+		{
+			
+		}
+		div#contentinner div.articles_list div.article a.readon:hover,
+		div#contentinner div.articles_list div.article a.readon:active
+		{
+			
+		}
+		
+		div#contentinner div.articles_list div.article p.subinfo
+		{
+			margin: 15px 0 0 0;
+			font-size: .8em;
+			color: #888;
+		}
+
+/*
+ * Forms
+ */
+div.formlabel
+{
+	text-align: right;
+	font-size: 1.1em;
+	margin-bottom: 10px;
+}
+
+div.formfield
+{
+	margin-bottom: 10px;
+}
+	
+	div.formfield input
+	{
+		margin: 0;
+		padding: 5px;
+		font-size: 1.3em;
+	}
+	
+	div.formfield textarea
+	{
+		font-family: Verdana;
+		margin: 0;
+		padding: 5px;
+		font-size: 1em;
+		width: 418px;
+	}
+
+div.formerror
+{
+	font-size: .8em;
+	color: red;
+}
+
+
+
+/*
+ * Other stuff
+ */
+div.bigger
+{
+	font-size: 2em;
+	line-height: 1em;
+}
+
+	div.bigger input
+	{
+		font-size: 1em;
+	}
+	
+	div.bigger select
+	{
+		font-size: 1em;
+	}
